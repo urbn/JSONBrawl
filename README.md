@@ -52,6 +52,7 @@
 - Operators with no reference???
 - Protocol for adding custom value decoding
 - Maybe a little light on the documentation, need to dig in
+- Requires NSDictionary
 
 ### Decodable: https://github.com/Anviking/Decodable
 - Operators, ugh

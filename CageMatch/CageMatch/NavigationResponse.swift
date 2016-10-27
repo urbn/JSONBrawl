@@ -8,9 +8,12 @@
 
 import UIKit
 
-public class NavigationResponse: NSObject {
+enum NavigationResponseMappingError: Error {
+    case missingNavigationItemsError
+}
+
+class NavigationResponse: NSObject {
     let navigationItems: [NavigationItem]
-    let containers: [String: [NavigationItem]]?
     
     override init() {
         fatalError()
