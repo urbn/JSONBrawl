@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'CageMatch' do
+
+  target 'CageMatchTests' do
+    inherit! :search_paths
+  end
+end
