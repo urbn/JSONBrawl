@@ -59,7 +59,7 @@ class NavigationItemMarshal: NSObject, Unmarshaling {
 // MARK: - Descriptions
 extension NavigationItemMarshal {
     open override var description: String {
-        return "<\(type(of: self)): \(Unmanaged.passUnretained(self).toOpaque())> - displayName: \"\(displayName)\", itemId: \(itemId), slug: \"\(slug)\", children: \(children)"
+        return "<\(type(of: self)): \(Unmanaged.passUnretained(self).toOpaque())> - displayName: \"\(displayName)\", children.count: \(children?.count)"
     }
 }
 

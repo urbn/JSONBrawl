@@ -10,7 +10,7 @@ import XCTest
 
 class Helpers {
     static func jsonFor(_ path: String, ext: String = "json") -> Any? {
-        guard let path = Bundle(for: Helpers.self).url(forResource: "NavigationItemJSON", withExtension: "json"), let data = try? Data(contentsOf: path) else { return nil }
+        guard let path = Bundle(for: Helpers.self).url(forResource: path, withExtension: ext), let data = try? Data(contentsOf: path) else { return nil }
         
         return try? JSONSerialization.jsonObject(with: data, options: [])
     }

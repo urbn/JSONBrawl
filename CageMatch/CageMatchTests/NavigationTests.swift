@@ -88,24 +88,32 @@ class NavigationTests: XCTestCase {
     }
     
     func testBrokenMainNavigationItems() {
-//        guard let json = jsonFor("BrokenMainNavigationItemJSON") else { return }
-//        do {
-//            let _ = try NavigationResponse.decode(json)
-//        }
-//        catch {
-//            XCTAssertNotNil(error, "Navigation response missing main navigation shouold fail")
-//        }
+        guard let json = Helpers.jsonFor("BrokenMainNavigationItemJSON") as? NSDictionary else {
+            XCTFail("Could not get the BrokenMainNavigationItemJSON")
+            return
+        }
+
+        do {
+            let _ = try NavigationResponseMarshal(object: json)
+        }
+        catch {
+            XCTAssertNotNil(error, "Navigation response missing main navigation should fail")
+        }
     }
     
     func testBrokenChildNavigationItems() {
-//        guard let json = jsonFor("BrokenChildNavigationItemJSON") else { return }
-//        do {
-//            let navigationResponse = try NavigationResponse.decode(json)
-//            let mainChildren = navigationResponse.navigationItems
-//            XCTAssert(mainChildren.count == 1, "Warning - should have 1 main children because help & info was corrupt")
-//        }
-//        catch {
-//            XCTFail("Error decoding item: \(error)")
-//        }
+        guard let json = Helpers.jsonFor("BrokenChildNavigationItemJSON") as? NSDictionary else {
+            XCTFail("Could not get the BrokenChildNavigationItemJSON")
+            return
+        }
+
+        do {
+            let navigationResponse = try NavigationResponseMarshal(object: json)
+            let mainChildren = navigationResponse.navigationItems
+            XCTAssert(mainChildren.count == 1, "Warning - should have 1 main children because help & info was corrupt")
+        }
+        catch {
+            XCTFail("Error decoding item: \(error)")
+        }
     }
 }
