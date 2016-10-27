@@ -1,4 +1,4 @@
-# JSONBrawl
+# JSONCageMatch
 ### Ready, FIGHT!
 
 *The purpose of this repo is to put several JSON parsing libraries in the cage and let em fight till the death.*
@@ -15,9 +15,12 @@
 - Tests!!!!
 
 ### The Rules
-- Add the parsing library to the project via a cocoapod
+- Create a branch to enter the cage match
+- Add the parsing library contender to the project via a cocoapod
 - Write an extension for each model to show what parsing is like utilizing the library
 - Add unit tests that run the models through the standard testing suite after going through parsing
+- Add contender to the README with any notes or considerations (include link to project)
+- Submit a PR with added contender
 
 ---
 
