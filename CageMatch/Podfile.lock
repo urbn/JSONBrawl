@@ -1,0 +1,12 @@
+PODS:
+  - Marshal (1.0.0)
+
+DEPENDENCIES:
+  - Marshal
+
+SPEC CHECKSUMS:
+  Marshal: a3c5c5dbd388112edf3cdabb718f2b4cfe48658a
+
+PODFILE CHECKSUM: f0f2c2ac8b483cb7df31f604484c351abc591419
+
+COCOAPODS: 1.1.1
