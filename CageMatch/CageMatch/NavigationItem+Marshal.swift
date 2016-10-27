@@ -22,27 +22,6 @@ class NavigationItemMarshal: NSObject, Unmarshaling {
     let containerInfo: [String]?
     
     required init(object: MarshaledObject) throws {
-//        if let typeCode = try? json => "typeCode" as? String, let code = typeCode {
-//            self.typeCode = ItemType(rawValue: code)
-//        }
-//        else {
-//            self.typeCode = nil
-//        }
-//        
-//        if let children: [NavigationItem] = try? [NavigationItem].decode(json =>? "navigationItems", ignoreInvalidObjects: true) , !children.isEmpty {
-//            self.children = children
-//        }
-//        else {
-//            self.children = nil
-//        }
-//        
-//        if let containerInfo: [String] = try? [String].decode(json => "containerInfo", ignoreInvalidObjects: true) , !containerInfo.isEmpty {
-//            self.containerInfo = containerInfo
-//        }
-//        else {
-//            self.containerInfo = nil
-//        }
-
         itemId = try object.value(for: "itemId")
         displayName = try object.value(for: "displayName")
         slug = try object.value(for: "slug")
