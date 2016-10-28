@@ -29,6 +29,22 @@ class NavigationResponseMapper: NSObject, Mappable {
         }
         
         // Like Marshal, Mapper throws out the entire damn thing because there is no optional array parsing
+        /* Unlike Marshal, Mapper does have a method which is designed to flatmap out nil values, but it only works easily on the core value types
+        
+         NSDictionary
+         NSArray
+         String
+         Int
+         UInt
+         Float
+         Double
+         Bool
+         
+            Conforming a custom model to Convertible literrally requires parsing that model manually, which sucks.
+         
+            public func from<T: RawRepresentable>(_ field: String, defaultValue: T? = nil) throws ->
+            [T] where T.RawValue: Convertible, T.RawValue == T.RawValue.ConvertedType
+        */
         //        let topLevelItem: [NavigationItemMapper] = try map.from("navigationItems")
         //        mainNavigationItems = topLevelItem.first?.children ?? []
 
