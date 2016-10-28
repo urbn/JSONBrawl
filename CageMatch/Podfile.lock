@@ -1,12 +1,15 @@
 PODS:
   - Marshal (1.0.0)
+  - ModelMapper (5.0.0)
 
 DEPENDENCIES:
   - Marshal
+  - ModelMapper
 
 SPEC CHECKSUMS:
   Marshal: a3c5c5dbd388112edf3cdabb718f2b4cfe48658a
+  ModelMapper: 89ced1f51ec6360e93f6889d08c818d4cad526a3
 
-PODFILE CHECKSUM: f0f2c2ac8b483cb7df31f604484c351abc591419
+PODFILE CHECKSUM: c453b68d58cd19409af467dda0ffe08e6e282111
 
 COCOAPODS: 1.1.1

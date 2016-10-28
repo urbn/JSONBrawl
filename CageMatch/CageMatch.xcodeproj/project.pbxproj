@@ -23,6 +23,9 @@
 		45BAC2E51DC23AA000C2FD99 /* BrokenMainNavigationItemJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 45BAC2E41DC23AA000C2FD99 /* BrokenMainNavigationItemJSON.json */; };
 		45BAC2E71DC23AC300C2FD99 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAC2E61DC23AC300C2FD99 /* NavigationTests.swift */; };
 		8975E7CCBB6AACCEC36C7FDD /* Pods_CageMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB766EC8F5504C595BB770B /* Pods_CageMatchTests.framework */; };
+		F68D08741DC2A35800A129BC /* NavigationItem+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08731DC2A35800A129BC /* NavigationItem+Mapper.swift */; };
+		F68D08761DC2A36500A129BC /* NavigationResponse+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08751DC2A36500A129BC /* NavigationResponse+Mapper.swift */; };
+		F68D08781DC2AE7A00A129BC /* MapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08771DC2AE7A00A129BC /* MapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		4E0897BE2C40D24C16D35B70 /* Pods-CageMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CageMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-CageMatch/Pods-CageMatch.release.xcconfig"; sourceTree = "<group>"; };
 		8A78287904054D8EEBE75E2C /* Pods_CageMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CageMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB766EC8F5504C595BB770B /* Pods_CageMatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CageMatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68D08731DC2A35800A129BC /* NavigationItem+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Mapper.swift"; sourceTree = "<group>"; };
+		F68D08751DC2A36500A129BC /* NavigationResponse+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationResponse+Mapper.swift"; sourceTree = "<group>"; };
+		F68D08771DC2AE7A00A129BC /* MapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		45B2A1F21DC196700019D0E3 /* CageMatch */ = {
 			isa = PBXGroup;
 			children = (
+				F68D08721DC2A31B00A129BC /* Lyft Model Mapper */,
 				45B2A1F31DC196700019D0E3 /* AppDelegate.swift */,
 				45B2A1F51DC196700019D0E3 /* ViewController.swift */,
 				45BAC2D41DC2330900C2FD99 /* Models */,
@@ -130,6 +137,7 @@
 			children = (
 				45AA6BF41DC2514F006A7D0C /* TestHelper.swift */,
 				45BAC2E61DC23AC300C2FD99 /* NavigationTests.swift */,
+				F68D08771DC2AE7A00A129BC /* MapperTests.swift */,
 				45BAC2DF1DC23A7000C2FD99 /* JSON */,
 				45B2A20A1DC196700019D0E3 /* Info.plist */,
 			);
@@ -166,6 +174,15 @@
 				13326722812B668D06211FAF /* Pods-CageMatchTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F68D08721DC2A31B00A129BC /* Lyft Model Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				F68D08731DC2A35800A129BC /* NavigationItem+Mapper.swift */,
+				F68D08751DC2A36500A129BC /* NavigationResponse+Mapper.swift */,
+			);
+			name = "Lyft Model Mapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,11 +393,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B2A1F61DC196700019D0E3 /* ViewController.swift in Sources */,
+				F68D08761DC2A36500A129BC /* NavigationResponse+Mapper.swift in Sources */,
 				45BAC2DC1DC239FE00C2FD99 /* NavigationResponse+Marshal.swift in Sources */,
 				45B2A1F41DC196700019D0E3 /* AppDelegate.swift in Sources */,
 				45BAC2DE1DC23A1600C2FD99 /* NavigationItem+Marshal.swift in Sources */,
 				45BAC2DA1DC2388C00C2FD99 /* NavigationItem.swift in Sources */,
 				45BAC2D81DC234AD00C2FD99 /* NavigationResponse.swift in Sources */,
+				F68D08741DC2A35800A129BC /* NavigationItem+Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +409,7 @@
 			files = (
 				45BAC2E71DC23AC300C2FD99 /* NavigationTests.swift in Sources */,
 				45AA6BF51DC2514F006A7D0C /* TestHelper.swift in Sources */,
+				F68D08781DC2AE7A00A129BC /* MapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

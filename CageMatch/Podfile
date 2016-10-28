@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'CageMatch' do
   pod "Marshal"
-
+  pod 'ModelMapper'
   target 'CageMatchTests' do
     inherit! :search_paths
   end
