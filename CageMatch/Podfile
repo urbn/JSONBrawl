@@ -1,7 +1,8 @@
 use_frameworks!
 
 target 'CageMatch' do
-  pod "Marshal"
+  pod 'Marshal'
+  pod 'PMJSON'
 
   target 'CageMatchTests' do
     inherit! :search_paths
