@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A3BB3E39584DA2D0A630FDE /* Pods_CageMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A78287904054D8EEBE75E2C /* Pods_CageMatch.framework */; };
+		308925B91DC3826C0048EADA /* NavigationResponse+PMJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308925B81DC3826C0048EADA /* NavigationResponse+PMJSON.swift */; };
+		308925BB1DC3827B0048EADA /* NavigationItem+PMJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308925BA1DC3827B0048EADA /* NavigationItem+PMJSON.swift */; };
 		45AA6BF51DC2514F006A7D0C /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA6BF41DC2514F006A7D0C /* TestHelper.swift */; };
 		45B2A1F41DC196700019D0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2A1F31DC196700019D0E3 /* AppDelegate.swift */; };
 		45B2A1F61DC196700019D0E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2A1F51DC196700019D0E3 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		13326722812B668D06211FAF /* Pods-CageMatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CageMatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CageMatchTests/Pods-CageMatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		1794DCD4B615883685BAF0A2 /* Pods-CageMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CageMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CageMatch/Pods-CageMatch.debug.xcconfig"; sourceTree = "<group>"; };
 		20AEFE3FF0C5CC9275B294DA /* Pods-CageMatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CageMatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CageMatchTests/Pods-CageMatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		308925B81DC3826C0048EADA /* NavigationResponse+PMJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationResponse+PMJSON.swift"; sourceTree = "<group>"; };
+		308925BA1DC3827B0048EADA /* NavigationItem+PMJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationItem+PMJSON.swift"; sourceTree = "<group>"; };
 		45AA6BF41DC2514F006A7D0C /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		45B2A1F01DC196700019D0E3 /* CageMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CageMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B2A1F31DC196700019D0E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				45BAC2D91DC2388C00C2FD99 /* NavigationItem.swift */,
 				45BAC2DB1DC239FE00C2FD99 /* NavigationResponse+Marshal.swift */,
 				45BAC2DD1DC23A1600C2FD99 /* NavigationItem+Marshal.swift */,
+				308925B81DC3826C0048EADA /* NavigationResponse+PMJSON.swift */,
+				308925BA1DC3827B0048EADA /* NavigationItem+PMJSON.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -379,8 +385,10 @@
 				45BAC2DC1DC239FE00C2FD99 /* NavigationResponse+Marshal.swift in Sources */,
 				45B2A1F41DC196700019D0E3 /* AppDelegate.swift in Sources */,
 				45BAC2DE1DC23A1600C2FD99 /* NavigationItem+Marshal.swift in Sources */,
+				308925B91DC3826C0048EADA /* NavigationResponse+PMJSON.swift in Sources */,
 				45BAC2DA1DC2388C00C2FD99 /* NavigationItem.swift in Sources */,
 				45BAC2D81DC234AD00C2FD99 /* NavigationResponse.swift in Sources */,
+				308925BB1DC3827B0048EADA /* NavigationItem+PMJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

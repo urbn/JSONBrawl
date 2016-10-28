@@ -14,4 +14,10 @@ class Helpers {
         
         return try? JSONSerialization.jsonObject(with: data, options: [])
     }
+    
+    static func jsonDataFor(_ path: String, ext: String = "json") -> Any? {
+        guard let path = Bundle(for: Helpers.self).url(forResource: path, withExtension: ext), let data = try? Data(contentsOf: path) else { return nil }
+        
+        return data
+    }
 }
