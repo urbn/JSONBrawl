@@ -38,11 +38,13 @@
 - Not very active
 
 ### Mapper: https://github.com/lyft/mapper
-- Actively developed by Lyft. Though not sure how actively
+- Actively developed by Lyft. Updated every 30 days or so.
 - Uses NSDictionary/NSArray
+- Can parse JSON that has invalid objects / type mismatches, but more difficult with custom types.
 - Convertible is a nice protocol to transfer types from JSON (CLCoordinate)
 - from is non-optional parsing, optionalFrom is optional parsing
 - Concise syntax
+- the pods internal testing is not robust
 
 ### Marshal: https://github.com/utahiosmac/Marshal
 - Protocol oriented
