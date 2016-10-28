@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import PMJSON
+
+class NavigationResponsePMJSON: NSObject {
+    let navigationItems: [NavigationItemPMJSON]
+    
+    
+    init(json: JSON) throws {
+        navigationItems = try json.mapArray("navigationItems", NavigationItemPMJSON.init(json:))
+    }
+}

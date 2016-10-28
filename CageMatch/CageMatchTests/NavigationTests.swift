@@ -8,6 +8,8 @@
 
 import XCTest
 import Marshal
+import PMJSON
+
 @testable import CageMatch
 
 class NavigationTests: XCTestCase {
@@ -16,25 +18,42 @@ class NavigationTests: XCTestCase {
             XCTFail("Could not get the NavigationItemJSON")
             return
         }
+        
+        guard let jsonData = Helpers.jsonDataFor("NavigationItemJSON") as? Data else {
+            XCTFail("Could not get the NavigationItemJSON")
+            return
+        }
 
-        var response: NavigationResponseMarshal?
+
+        var response: NavigationResponsePMJSON?
         do {
-            response = try NavigationResponseMarshal(object: json)
+            let jay = try JSON.decode(jsonData)
+            response = try NavigationResponsePMJSON(json: jay)
+
         }
         catch {
             XCTFail("Error decoding item: \(error)")
         }
+
         
+//        var response: NavigationResponseMarshal?
+//        do {
+//            response = try NavigationResponseMarshal(object: json)
+//        }
+//        catch {
+//            XCTFail("Error decoding item: \(error)")
+//        }
+//        
         guard let testNavResponse = response else {
             XCTFail("Shoud have serialized nav response")
             return
         }
 
-        let mainChildren = testNavResponse.navigationItems
+        let mainChildren = testNavResponse.navigationItems.first?.children
         
-        XCTAssert(mainChildren.count == 5, "Warning - should have 5 main children. Got \(mainChildren.count)")
+        XCTAssert(mainChildren?.count == 5, "Warning - should have 5 main children. Got \(mainChildren?.count)")
 
-        let mainShoppingNavItems = mainChildren.filter({ $0.itemId == "SHOPPING-ROOT" }).first?.children
+        let mainShoppingNavItems = mainChildren?.filter({ $0.itemId == "SHOPPING-ROOT" }).first?.children
         
         guard let shoppingNavItems = mainShoppingNavItems else {
             XCTFail("Failed to unwrap shopping navItems.")
