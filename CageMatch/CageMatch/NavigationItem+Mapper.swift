@@ -30,7 +30,7 @@ class NavigationItemMapper: NSObject, Mappable {
         typeCode = map.optionalFrom("typeCode")
         parentItemId = map.optionalFrom("parentItemId")
         parentSlug = map.optionalFrom("parentSlug")
-        children = map.optionalFrom("navigationItems")
+        children = map.optionalFrom("navigationItems") ?? []
         containerInfo = map.optionalFrom("containerInfo")
     }
 }

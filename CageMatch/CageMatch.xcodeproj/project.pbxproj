@@ -25,6 +25,7 @@
 		8975E7CCBB6AACCEC36C7FDD /* Pods_CageMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB766EC8F5504C595BB770B /* Pods_CageMatchTests.framework */; };
 		F68D08741DC2A35800A129BC /* NavigationItem+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08731DC2A35800A129BC /* NavigationItem+Mapper.swift */; };
 		F68D08761DC2A36500A129BC /* NavigationResponse+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08751DC2A36500A129BC /* NavigationResponse+Mapper.swift */; };
+		F68D08781DC2AE7A00A129BC /* MapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D08771DC2AE7A00A129BC /* MapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EBB766EC8F5504C595BB770B /* Pods_CageMatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CageMatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68D08731DC2A35800A129BC /* NavigationItem+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Mapper.swift"; sourceTree = "<group>"; };
 		F68D08751DC2A36500A129BC /* NavigationResponse+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationResponse+Mapper.swift"; sourceTree = "<group>"; };
+		F68D08771DC2AE7A00A129BC /* MapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				45AA6BF41DC2514F006A7D0C /* TestHelper.swift */,
 				45BAC2E61DC23AC300C2FD99 /* NavigationTests.swift */,
+				F68D08771DC2AE7A00A129BC /* MapperTests.swift */,
 				45BAC2DF1DC23A7000C2FD99 /* JSON */,
 				45B2A20A1DC196700019D0E3 /* Info.plist */,
 			);
@@ -406,6 +409,7 @@
 			files = (
 				45BAC2E71DC23AC300C2FD99 /* NavigationTests.swift in Sources */,
 				45AA6BF51DC2514F006A7D0C /* TestHelper.swift in Sources */,
+				F68D08781DC2AE7A00A129BC /* MapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
